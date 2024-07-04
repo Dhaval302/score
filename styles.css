@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    background: linear-gradient(135deg, #00aaff, #007acc);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header .contact-info {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+header p {
+    margin: 0.5rem 0;
+}
+
+header a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+header a:hover {
+    color: #fff;
+}
+
+header i {
+    margin-right: 0.5rem;
+}
+
+section {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-10px);
+}
+
+h1, h2, h3 {
+    color: #00aaff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #333;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-left: 4px solid #00aaff;
+    transition: background 0.3s ease-in-out;
+}
+
+ul li:hover {
+    background: #00aaff;
+    color: #fff;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+.company, .education strong {
+    font-weight: bold;
+    color: #ffcc00;
+    text-transform: uppercase;
+}
+
+span {
+    float: right;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .contact-info {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header .contact-info {
+        font-size: 0.9rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+}
